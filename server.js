@@ -32,6 +32,10 @@ app.get('/', function (req,res) {
     res.render('index.html');
 });
 
+app.get('/api/albums',(req,res)=>{
+    getAllAlbums();
+});
+
 app.get('/api/albums', (req,res) => {
     getAllAlbums((err,result)=>{
         if (!err) {
