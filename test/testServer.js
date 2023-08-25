@@ -36,7 +36,6 @@ describe('Album DELETE Testing', function(){
         let bodyObj = JSON.parse(statusCode);
         expect(bodyObj).to.equal(200);
         console.log('It is successful !',bodyObj);
-        // done();
         });
     });
 });
